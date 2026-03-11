@@ -1,0 +1,18 @@
+# Create .gitignore in your terraform-flask-lab folder:
+# Terraform state files (contain sensitive data about your infrastructure)
+*.tfstate
+*.tfstate.*
+.terraform/
+# Crash log files
+crash.log
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+# NEVER commit credentials or private keys
+*.pem
+*.key
+*credentials*
+*secret*
+
+# This matters because Terraform state files contain sensisitve info like resources IDs and sometimes passwords. The .terraform folder contains provider plugins. Neither should be in version control. 
