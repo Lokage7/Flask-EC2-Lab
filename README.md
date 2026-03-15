@@ -4,7 +4,7 @@
 
 **GRC Engineering Club — Bridging Compliance and Code**
 
-This project demonstrates how to deploy a Python Flask web application on AWS EC2 — first manually through the AWS Management Console, then using Terraform to automate the same infrastructure. The goal is to make the case for Infrastructure as Code (IaC) by showing exactly what you're automating and *why* it matters.
+This project demonstrates how to deploy a Python Flask web application on AWS EC2 first manually through the AWS Management Console, then using Terraform to automate the same infrastructure. The goal is to make the case for Infrastructure as Code (IaC) by showing exactly what you're automating and why it matters.
 
 ---
 
@@ -36,7 +36,7 @@ GRC (Governance, Risk, and Compliance) work is no longer confined to spreadsheet
 | Linux administration | Reviewing system configurations during audits |
 | Terraform IaC | Codifying infrastructure for repeatability and audit trails |
 
-**Why manual-first?** You need to understand what Terraform is automating before you automate it. Otherwise you're copying code without comprehension — and that's useless when something breaks or when you're assessing whether someone else's infrastructure meets control requirements.
+**Why manual-first?** You need to understand what Terraform is automating before you automate it. Otherwise you're copying code without comprehension and that's useless when something breaks or when you're assessing whether someone else's infrastructure meets control requirements.
 
 ---
 
@@ -147,7 +147,7 @@ terraform -v
    - **macOS/Linux:** Select `.pem`
    - **Windows (PowerShell):** Select `.pem` — PowerShell's built-in SSH supports `.pem` directly
    - **Windows (PuTTY only):** Select `.ppk`
-4. The private key downloads automatically — save it securely.
+4. The private key downloads automatically, so save it securely.
 
 **macOS/Linux — set permissions and move the key:**
 ```bash
@@ -260,7 +260,7 @@ ssh -i "$env:USERPROFILE\.ssh\grc-flask-lab-key.pem" ubuntu@<PUBLIC_IP>
 
 ### Step 5: Install Dependencies
 
-Once connected via SSH, you're running commands on the Linux EC2 instance — these are the same regardless of what OS your local machine is:
+Once connected via SSH, you're running commands on the Linux EC2 instance, these are the same regardless of what OS your local machine is:
 
 **Amazon Linux 2023:**
 ```bash
